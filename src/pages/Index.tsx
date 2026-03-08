@@ -51,19 +51,19 @@ const projects = [
 
 const news = [
   {
-    title: "Lions Club Tallinn City Celebrates 10 Years of Service",
-    date: "February 28, 2026",
-    excerpt: "A milestone celebration honoring a decade of community impact and volunteerism.",
+    title: "Uudis 1",
+    date: "28. veebruar 2026",
+    excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    title: "New Partnership with Tallinn Schools",
-    date: "February 15, 2026",
-    excerpt: "We're expanding our youth mentoring program to three additional schools in the region.",
+    title: "Uudis 2",
+    date: "15. veebruar 2026",
+    excerpt: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
-    title: "Record Turnout at Winter Food Drive",
-    date: "January 20, 2026",
-    excerpt: "Over 500 families received food packages during our annual winter food drive.",
+    title: "Uudis 3",
+    date: "20. jaanuar 2026",
+    excerpt: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
 ];
 
@@ -97,7 +97,7 @@ const Index = () => {
         <div className="section-container">
           <div className="text-center mb-12">
             <p className="heading-section">Mida me teeme</p>
-            <h2 className="heading-primary">Meie Eesmärgid</h2>
+            <h2 className="heading-primary">Meie eesmärgid</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {impactItems.map((item) => (
@@ -121,8 +121,8 @@ const Index = () => {
       <section className="section-padding bg-background">
         <div className="section-container">
           <div className="text-center mb-12">
-            <p className="heading-section">Meie Töö</p>
-            <h2 className="heading-primary">Meie Projektid</h2>
+            <p className="heading-section">Meie töö</p>
+            <h2 className="heading-primary">Meie toetatavad projektid</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project) => (
@@ -144,7 +144,7 @@ const Index = () => {
                     to="/projektid"
                     className="text-sm font-medium text-lions-blue hover:text-lions-blue-light transition-colors"
                   >
-                    Learn more →
+                    Vaata lisa →
                   </Link>
                 </div>
               </div>
@@ -173,7 +173,7 @@ const Index = () => {
         <div className="section-container">
           <div className="text-center mb-12">
             <p className="heading-section">Püsi Kursis</p>
-            <h2 className="heading-primary">Värsked Uudised</h2>
+            <h2 className="heading-primary">Värsked uudised</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {news.map((item) => (
@@ -190,7 +190,7 @@ const Index = () => {
           </div>
           <div className="text-center mt-10">
             <Link to="/uudised" className="btn-secondary">
-              All News
+              Kõik Uudised
             </Link>
           </div>
         </div>

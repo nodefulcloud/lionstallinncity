@@ -10,6 +10,7 @@ const projects = [
     description:
       "MTÜ Lootuse Küla pakub alkoholi- ja narkosõltuvusega võitlejatele rehabilitatsiooni ning toimetulekuoskuste tuge. Programmis osalejad õpivad töö- ja igapäevaeluks vajalikke oskusi ning saavad kogukonna tuge, et luua uus algus ja paremad võimalused tulevikuks.",
     status: "Projekt",
+    link: "https://lootusekula.ee",
   },
   {
     image: harakaKoduImg,
@@ -17,6 +18,7 @@ const projects = [
     description:
       "Sihtasutus Haraka Kodu pakub ööpäevaringset hooldust ja teraapiaid raske ja sügava liitpuudega noortele. Eesmärk on parandada nende igapäevast toimetulekut ja sotsiaalseid oskusi turvalises, peresarnases keskkonnas, toetades kaasavat kogukonda.",
     status: "Projekt",
+    link: "https://harakakodu.ee",
   },
 ];
 
@@ -51,12 +53,24 @@ const ProjectsPage = () => {
                     loading="lazy"
                   />
                 </div>
+
                 <div className={i % 2 === 1 ? "lg:order-1" : ""}>
                   <span className="inline-block text-xs font-bold uppercase tracking-wider text-secondary mb-2">
                     {project.status}
                   </span>
+
                   <h2 className="heading-secondary mb-4">{project.title}</h2>
-                  <p className="text-body">{project.description}</p>
+
+                  <p className="text-body mb-6">{project.description}</p>
+
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-5 py-2.5 border border-primary text-primary font-medium hover:bg-primary hover:text-white transition-colors"
+                  >
+                    Uuri lisa
+                  </a>
                 </div>
               </div>
             ))}
@@ -70,7 +84,9 @@ const ProjectsPage = () => {
             Soovid kaasa aidata?
           </h2>
           <p className="text-primary-foreground/80 mb-8 max-w-lg mx-auto">
-            Toeta meie tegevust ja saa osa meie missioonist parandada inimeste elukvaliteeti. Lions Club Tallinn City pakub võimalust teha reaalseid muutusi kogukonnas.
+            Toeta meie tegevust ja saa osa meie missioonist parandada inimeste
+            elukvaliteeti. Lions Club Tallinn City pakub võimalust teha
+            reaalseid muutusi kogukonnas.
           </p>
           <Link to="/toetused" className="btn-gold">
             Toeta Meid

@@ -70,7 +70,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-sm font-medium opacity-80 hover:opacity-100 transition-opacity underline"
             >
-              Visit lionsclubs.org →
+              Vaata lionsclubs.org →
             </a>
           </div>
         </div>
