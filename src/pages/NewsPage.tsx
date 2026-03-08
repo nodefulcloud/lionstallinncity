@@ -3,30 +3,30 @@ import hero1 from "@/assets/hero-1.png";
 
 const posts = [
   {
-    title: "Lions Club Tallinn City Celebrates 10 Years of Service",
-    date: "February 28, 2026",
-    excerpt: "A milestone celebration honoring a decade of community impact and volunteerism in the Tallinn area. Over 100 members and guests gathered to reflect on achievements and set goals for the future.",
+    title: "Uudis 1",
+    date: "28. veebruar 2026",
+    excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: hero1,
   },
   {
-    title: "New Partnership with Tallinn Schools",
-    date: "February 15, 2026",
-    excerpt: "We're expanding our youth mentoring program to three additional schools in the Tallinn region. The partnership will provide after-school tutoring and leadership workshops for students aged 12–18.",
+    title: "Uudis 2",
+    date: "15. veebruar 2026",
+    excerpt: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
-    title: "Record Turnout at Winter Food Drive",
-    date: "January 20, 2026",
-    excerpt: "Over 500 families received food packages during our annual winter food drive. Thanks to the generosity of our members and the community, we exceeded our donation goals by 40%.",
+    title: "Uudis 3",
+    date: "20. jaanuar 2026",
+    excerpt: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
   {
-    title: "Lions International Convention 2025 Recap",
-    date: "December 10, 2025",
-    excerpt: "Our delegates attended the Lions International Convention and brought back new ideas and connections to strengthen our local chapter's programs.",
+    title: "Uudis 4",
+    date: "10. detsember 2025",
+    excerpt: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
   {
-    title: "Volunteer of the Year Award",
-    date: "November 5, 2025",
-    excerpt: "Congratulations to our member Maris Kask, who received the Lions District Volunteer of the Year award for her outstanding dedication to community service.",
+    title: "Uudis 5",
+    date: "5. november 2025",
+    excerpt: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
   },
 ];
 
