@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Slab:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --primary: 214 100% 17%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 45 97% 53%;
+    --secondary-foreground: 214 100% 17%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 15% 45%;
+
+    --accent: 270 50% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 20% 90%;
+    --input: 214 20% 90%;
+    --ring: 214 100% 17%;
+
+    --radius: 0.375rem;
+
+    --lions-blue: 214 100% 17%;
+    --lions-blue-light: 214 60% 30%;
+    --lions-gold: 45 97% 53%;
+    --lions-gold-dark: 40 85% 45%;
+    --lions-purple: 270 50% 40%;
+    --lions-gray-50: 210 20% 98%;
+    --lions-gray-100: 210 20% 96%;
+    --lions-gray-200: 214 20% 90%;
+    --lions-gray-600: 215 15% 45%;
+    --lions-gray-800: 215 25% 20%;
+    --lions-gray-900: 215 25% 15%;
+
+    --font-heading: 'Roboto Slab', serif;
+    --font-body: 'Roboto', sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .heading-primary {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-primary leading-tight;
+    font-family: var(--font-heading);
+  }
+
+  .heading-secondary {
+    @apply text-2xl md:text-3xl font-bold text-primary;
+    font-family: var(--font-heading);
+  }
+
+  .heading-section {
+    @apply text-sm font-bold uppercase tracking-widest text-secondary mb-3;
+    font-family: var(--font-body);
+  }
+
+  .text-body {
+    @apply text-base md:text-lg text-muted-foreground leading-relaxed;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-3 rounded-sm font-medium text-primary-foreground transition-all duration-200;
+    background-color: hsl(var(--lions-blue));
+  }
+  .btn-primary:hover {
+    background-color: hsl(var(--lions-blue-light));
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-8 py-3 rounded-sm font-medium transition-all duration-200 border-2;
+    color: hsl(var(--lions-blue));
+    border-color: hsl(var(--lions-blue));
+    background: transparent;
+  }
+  .btn-secondary:hover {
+    background-color: hsl(var(--lions-blue));
+    color: hsl(var(--primary-foreground));
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center px-8 py-3 rounded-sm font-medium transition-all duration-200;
+    background-color: hsl(var(--lions-gold));
+    color: hsl(var(--lions-blue));
+  }
+  .btn-gold:hover {
+    background-color: hsl(var(--lions-gold-dark));
+  }
+
+  .card-lions {
+    @apply bg-card rounded-sm overflow-hidden shadow-sm transition-shadow duration-200;
+  }
+  .card-lions:hover {
+    @apply shadow-md;
+  }
+
+  .footer-bg {
+    background-color: hsl(var(--lions-blue));
+    color: hsl(var(--primary-foreground));
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      135deg,
+      hsla(var(--lions-blue), 0.85) 0%,
+      hsla(var(--lions-blue), 0.6) 100%
+    );
+  }
+}
