@@ -7,6 +7,7 @@ const navItems = [
   { label: "Meist", path: "/meist" },
   { label: "Projektid", path: "/projektid" },
   { label: "Toetused", path: "/toetused" },
+  { label: "Kinkekaart", path: "/kinkekaart" },
   { label: "Uudised", path: "/uudised" },
   { label: "Kontakt", path: "/kontakt" },
 ];

@@ -12,6 +12,9 @@ import JoinPage from "./pages/ToetaPage";
 import NewsPage from "./pages/NewsPage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
+import MaksePuudub from "./pages/MaksePuudub";
+import ToetaAitah from "./pages/ToetaAitah";
+import Kinkekaart from "./pages/Kinkekaart";
 
 const queryClient = new QueryClient();
 
@@ -57,7 +60,10 @@ const App = () => {
               <Route path="/" element={<Index />} />
               <Route path="/meist" element={<AboutPage />} />
               <Route path="/projektid" element={<ProjectsPage />} />
+              <Route path="/kinkekaart" element={<Kinkekaart />} />
               <Route path="/toetused" element={<JoinPage />} />
+              <Route path="/toetused/aitah" element={<ToetaAitah />} />
+              <Route path="/toetused/maksepuudub" element={<MaksePuudub />} />
               <Route path="/uudised" element={<NewsPage />} />
               <Route path="/kontakt" element={<ContactPage />} />
               <Route path="*" element={<NotFound />} />
