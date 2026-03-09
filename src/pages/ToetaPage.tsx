@@ -9,10 +9,11 @@ const bankDetails = {
 }
 
 const demoMontonioURLs = {
-  "swedbank": "https://sandbox-pay.montonio.com/09cf6e08-5413-4f13-9e06-8f3927b0b3c7",
-  "seb": "https://sandbox-pay.montonio.com/ad2873cd-f9e7-47bf-b4b8-2478292b3791",
-  "lhv": "https://sandbox-pay.montonio.com/46e3a606-3818-4bbd-a6d0-f07f52054807",
-  "cooppank": "https://sandbox-pay.montonio.com/77cc01c8-6a7e-44d4-962e-90d7c677f6d2"
+  "swedbank": "https://sandbox-pay.montonio.com/b1a12a8e-e554-48cb-87ba-98ecae9192a2",
+  "seb": "https://sandbox-pay.montonio.com/02cc57c9-9767-4903-8524-a616448c697d",
+  "lhv": "https://sandbox-pay.montonio.com/b40e0eec-41a1-46d6-8942-8dc9cea37a32",
+  "cooppank": "https://sandbox-pay.montonio.com/6f766945-50a6-4d1c-bb3a-14dc55f48f30",
+  "luminor": "https://sandbox-pay.montonio.com/7e85e369-397e-47a8-9817-8b803369c19f",
 }
 
 const JoinPage = () => {
@@ -134,6 +135,11 @@ const JoinPage = () => {
                       <option value="seb">SEB</option>
                       <option value="lhv">LHV</option>
                       <option value="cooppank">Coop Pank</option>
+                      {activeTab == "ukskord" && (
+                        <>
+                        <option value="luminor">Luminor</option>
+                        </>
+                      )}
                     </select>
                   </div>
                 <button type="submit" className="btn-gold w-full">
