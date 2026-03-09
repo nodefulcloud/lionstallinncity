@@ -36,8 +36,7 @@ const ToetaAitah = () => {
               </h3>
 
               <p className="text-body mb-6">
-                Teie makse on edukalt algatatud. Vajadusel saate nüüd naasta
-                avalehele või tutvuda meie projektidega.
+                Suur aitäh toetuse eest! Teie panus on meile väga oluline ja aitab meil oma tegevust edasi arendada.
               </p>
 
               <div className="flex flex-col gap-4">
